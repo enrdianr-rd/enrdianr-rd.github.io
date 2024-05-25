@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('company.jpg'); /* Replace 'background.jpg' with your image URL */
+            background-size: cover;
+            background-position: center;
+            color: #FFFFFF;
+            background-attachment: fixed; /* Keep background fixed */
+        }
+        header {
+            background-color: #000; /* Updated navbar color */
+            color: #008080; /* Updated text color */
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        h1 {
+            margin: 0;
+            font-size: 24px; /* Increased font size */
+
+        }
+        nav {
+            background-color: #f9f7f7; /* Updated navbar color */
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center; /* Align items horizontally */
+        }
+        nav a {
+            color: #008080; /* Updated link color */
+            text-decoration: none;
+            padding: 5px 10px;
+            margin: 0 10px; /* Added margin between links */
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #d1d8e0; /* Updated hover color */
+        }
+        .sections {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            padding: 10px;
+        }
+      section {
+    position: relative;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-size: 50%; /* Make the background image cover the entire section */
+    background-position: left;
+    transition: background-image 0.5s ease;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+
+        }
+        p {
+            text-align: justify;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-size: 18px; /* Increased font size for better readability */
+             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .fun-fact {
+            background-color: #f9c74f;
+            color: #fff;
+            padding: 30px;
+        }
+        .fun-fact p {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .section-left {
+            align-self: flex-start;
+            background-image: url('company.jpg');
+            background-size: 50%; /* Make the background image cover the entire section */
+    background-position: left; 
+        }
+        .section-right {
+            align-self: flex-end;
+            background-image: url('company.jpg');
+            background-size: 50%; /* Make the background image cover the entire section */
+    background-position: right; 
+        }
+        .section-img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .footer-nav {
+            display: flex;
+            justify-content: flex-end; /* Align to the right */
+            background-color: #000; /* Updated footer navbar color */
+            padding: 10px;
+            margin: 20px; /* Added margin */
+        }
+        .footer-nav a {
+            color: #fff; /* Updated link color */
+            text-decoration: none;
+            padding: 10px; /* Increased padding */
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .footer-nav a:hover {
+            background-color: #333; /* Updated hover color */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>UnityWorks Inc.</h1>
+        <nav>
+            <a href="#">Products</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Community</a>
+            <a href="#">News</a>
+        </nav>
+    </header>
+    <div class="sections">
+        <section id="inclusitivity" class="section-left" style="background-image: url('innov.jpg');">
+            <h2>Inclusivity</h2>
+            <p>At UnityWorks, diversity and inclusion are not just buzzwords; they are the cornerstone of everything we do. We believe that every individual brings unique perspectives, experiences, and talents to the table, and we are committed to creating a workplace where everyone feels valued, respected, and empowered to be their authentic selves. When you join us, you become part of a diverse and inclusive team that celebrates differences and fosters a culture of belonging.</p>
+        </section>
+        <section id="financial-report" class="section-right" style="background-image: url('community.jpg');">
+            <h2>Community Engagement</h2>
+            <p>We are deeply invested in the communities we serve. Whether it's through volunteering, charitable donations, or community events, we are dedicated to making a positive impact wherever we go. We believe that by actively engaging with and giving back to our communities, we can create a more equitable and prosperous future for all. When you join Unity Works, you become part of a company that not only cares about its customers but also about the world around us.</p>
+        </section>
+        <section id="move-your-career" class="section-left" style="background-image: url('Professional.png');">
+            <h2>Collaboration</h2>
+            <p>We know that the best ideas often come from collaboration and teamwork. That's why we foster a collaborative work environment where every voice is heard, and every idea is valued. Whether you're working with colleagues across departments or collaborating with customers to solve problems, you'll have the opportunity to contribute your unique skills and expertise to meaningful projects that make a difference. When you join UnityWorks, you become part of a team that works together to achieve shared goals and drive innovation.</p>
+        </section>
+        <section id="fun-fact" class="section-right fun-fact" style="background-image: url('Teaam.jpg');">
+            <h2>Join Us!</h2>
+            <p>Join us at UnityWorks and be part of a company that values inclusivity, community engagement, and collaboration. Together, we can build a brighter future for ourselves and for generations to come.</p>
+        </section>
+    </div>
+    <!-- Bottom Navigation -->
+    <nav class="footer-nav">
+        <a href="#">Careers</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+    </nav>
+</body>
+</html>
